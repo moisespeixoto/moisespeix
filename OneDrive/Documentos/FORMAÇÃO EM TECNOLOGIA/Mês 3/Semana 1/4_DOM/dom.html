@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body{
+            background-color: rgb(12, 112, 242);
+            color: white;
+        }
+        div{
+            padding: 30px;
+        }
+    </style>
+</head>
+<body id="principal">
+    <div>
+        <h1>Aprendendo DOM</h1>
+        <p>Nova Iguaçu (pronuncia-se AFI: [ˈnɔvɐ iɡwɐˈsu]) <br>
+            é um município brasileiro do estado do Rio de <br>
+            Janeiro, Região Sudeste do país. Localiza-se na <br>
+            Baixada Fluminense, na Região Metropolitana do <br>
+            Rio de Janeiro, estando situado a 40 km da <br>
+            capital estadual. </p>
+            <button>Clique aqui!</button>
+            <button>Clique aqui!</button>
+    </div>
+    <script>
+        // window.document.write('Minha primeira manipulação com DOM')
+        // window.alert('Oi!')
+        var x = window.document.getElementById('principal')
+        x.style.background = 'black'
+        var y = window.document.getElementsByTagName('button')[0]
+        y.innerHTML = 'Caio'
+        
+        </script>
+</body>
+</html>
